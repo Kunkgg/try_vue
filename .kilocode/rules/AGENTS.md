@@ -1,7 +1,7 @@
 # AGENTS.md
 
-这是一个我用于尝试和测试 vue 组件开发的项目
-
+> 这是一个我用于尝试和测试 vue 组件开发的项目
+> Goal: **simple, readable, and maintainable UI code**.  
 ---
 
 ## Dev environment tips
@@ -11,3 +11,30 @@
 - 使用 `vue-router` 来管理路由
 - 使用 `element-plus` 来构建 UI 组件
 
+
+---
+
+## Core tech stack
+
+- Vue 3
+- Element Plus (primary UI component library)
+- JavaScript
+- **Options API ONLY**
+
+---
+
+## VERY IMPORTANT: API usage rules
+
+### ❗ Options API only
+
+AI agents MUST:
+
+- Use `data`, `methods`, `computed`, `watch`
+- Use `created / mounted` lifecycle hooks
+
+AI agents MUST NOT:
+
+- ❌ Use Composition API
+- ❌ Use `setup()`
+- ❌ Use `ref`, `reactive`, `computed()` from Vue
+- ❌ Use custom composables (`useXxx`)
